@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+    <ProjectGuid>{D61E5966-6E1E-4484-920C-087A701777CC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CGame</RootNamespace>
+    <AssemblyName>游戏世界</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Environment>E:\最终赢家</Environment>
+    <MonoGamePlatform>DesktopGL</MonoGamePlatform>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;LINUX;FairyGui</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\$(MonoGamePlatform)\$(Platform)\$(Configuration)\</OutputPath>
+    <DefineConstants>TRACE;LINUX;FairyGui</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="E:\Editor\CLEngine.Core.dll">
+      <Link>CLEngine.Core.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\CLEngine.FarseerPhysics.dll">
+      <Link>CLEngine.FarseerPhysics.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\Bevels.mgfxo">
+      <Link>Content\engine\effects\Bevels.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\BloomCombine.mgfxo">
+      <Link>Content\engine\effects\BloomCombine.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\BloomExtract.mgfxo">
+      <Link>Content\engine\effects\BloomExtract.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\Crosshatch.mgfxo">
+      <Link>Content\engine\effects\Crosshatch.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\DeferredLighting.mgfxo">
+      <Link>Content\engine\effects\DeferredLighting.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\DeferredSprite.mgfxo">
+      <Link>Content\engine\effects\DeferredSprite.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\Dissolve.mgfxo">
+      <Link>Content\engine\effects\Dissolve.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\Dots.mgfxo">
+      <Link>Content\engine\effects\Dots.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\ForwardLighting.mgfxo">
+      <Link>Content\engine\effects\ForwardLighting.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\GaussianBlur.mgfxo">
+      <Link>Content\engine\effects\GaussianBlur.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\Grayscale.mgfxo">
+      <Link>Content\engine\effects\Grayscale.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\HeatDistortion.mgfxo">
+      <Link>Content\engine\effects\HeatDistortion.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\Invert.mgfxo">
+      <Link>Content\engine\effects\Invert.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\Letterbox.mgfxo">
+      <Link>Content\engine\effects\Letterbox.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\MultiTexture.mgfxo">
+      <Link>Content\engine\effects\MultiTexture.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\MultiTextureOverlay.mgfxo">
+      <Link>Content\engine\effects\MultiTextureOverlay.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\Noise.mgfxo">
+      <Link>Content\engine\effects\Noise.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\PaletteCycler.mgfxo">
+      <Link>Content\engine\effects\PaletteCycler.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\PixelGlitch.mgfxo">
+      <Link>Content\engine\effects\PixelGlitch.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\PolygonLight.mgfxo">
+      <Link>Content\engine\effects\PolygonLight.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\Reflection.mgfxo">
+      <Link>Content\engine\effects\Reflection.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\Scanlines.mgfxo">
+      <Link>Content\engine\effects\Scanlines.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\Sepia.mgfxo">
+      <Link>Content\engine\effects\Sepia.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\SpriteAlphaTest.mgfxo">
+      <Link>Content\engine\effects\SpriteAlphaTest.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\SpriteBlinkEffect.mgfxo">
+      <Link>Content\engine\effects\SpriteBlinkEffect.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\SpriteEffect.mgfxo">
+      <Link>Content\engine\effects\SpriteEffect.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\SpriteLightMultiply.mgfxo">
+      <Link>Content\engine\effects\SpriteLightMultiply.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\SpriteLines.mgfxo">
+      <Link>Content\engine\effects\SpriteLines.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\transitions\Squares.mgfxo">
+      <Link>Content\engine\effects\transitions\Squares.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\transitions\TextureWipe.mgfxo">
+      <Link>Content\engine\effects\transitions\TextureWipe.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\transitions\Wind.mgfxo">
+      <Link>Content\engine\effects\transitions\Wind.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\Twist.mgfxo">
+      <Link>Content\engine\effects\Twist.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\engine\effects\Vignette.mgfxo">
+      <Link>Content\engine\effects\Vignette.mgfxo</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\FairyGUI.xnb">
+      <Link>Content\FairyGUI.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\gui\Main.fui">
+      <Link>Content\gui\Main.fui</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\gui\Main_atlas0.xnb">
+      <Link>Content\gui\Main_atlas0.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\rpg\mainRole-Walk.xnb">
+      <Link>Content\rpg\mainRole-Walk.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\rpg\map.xnb">
+      <Link>Content\rpg\map.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\rpg\npc-Attack.xnb">
+      <Link>Content\rpg\npc-Attack.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\rpg\npc-Walk.xnb">
+      <Link>Content\rpg\npc-Walk.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\rpg\tsx1.xnb">
+      <Link>Content\rpg\tsx1.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\rpg\tsx2.xnb">
+      <Link>Content\rpg\tsx2.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\textures\gooCursor.xnb">
+      <Link>Content\textures\gooCursor.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\textures\heatDistortionNoise.xnb">
+      <Link>Content\textures\heatDistortionNoise.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\textures\textureWipeTransition\angular.xnb">
+      <Link>Content\textures\textureWipeTransition\angular.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\textures\textureWipeTransition\crissCross.xnb">
+      <Link>Content\textures\textureWipeTransition\crissCross.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\textures\textureWipeTransition\diagonalDistort.xnb">
+      <Link>Content\textures\textureWipeTransition\diagonalDistort.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\textures\textureWipeTransition\horizontal.xnb">
+      <Link>Content\textures\textureWipeTransition\horizontal.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\textures\textureWipeTransition\noise.xnb">
+      <Link>Content\textures\textureWipeTransition\noise.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\textures\textureWipeTransition\pokemon.xnb">
+      <Link>Content\textures\textureWipeTransition\pokemon.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\textures\textureWipeTransition\sawTooth.xnb">
+      <Link>Content\textures\textureWipeTransition\sawTooth.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\textures\textureWipeTransition\spiral.xnb">
+      <Link>Content\textures\textureWipeTransition\spiral.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\Content\textures\textureWipeTransition\wink.xnb">
+      <Link>Content\textures\textureWipeTransition\wink.xnb</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="E:\Editor\FairyGUI.DesktopGL.dll">
+      <Link>FairyGUI.DesktopGL.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\libopenal.1.dylib">
+      <Link>libopenal.1.dylib</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\libSDL2-2.0.0.dylib">
+      <Link>libSDL2-2.0.0.dylib</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\Lidgren.Network.dll">
+      <Link>Lidgren.Network.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll.config">
+      <Link>MonoGame.Framework.dll.config</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\x64\libopenal.so.1">
+      <Link>x64\libopenal.so.1</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\x64\libSDL2-2.0.so.0">
+      <Link>x64\libSDL2-2.0.so.0</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\x64\SDL2.dll">
+      <Link>x64\SDL2.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\x64\soft_oal.dll">
+      <Link>x64\soft_oal.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\x86\libopenal.so.1">
+      <Link>x86\libopenal.so.1</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\x86\libSDL2-2.0.so.0">
+      <Link>x86\libSDL2-2.0.so.0</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\x86\SDL2.dll">
+      <Link>x86\SDL2.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\x86\soft_oal.dll">
+      <Link>x86\soft_oal.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CLEngine.Core">
+      <HintPath>E:\Editor\CLEngine.Core.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="CLEngine.FarseerPhysics">
+      <HintPath>E:\Editor\CLEngine.FarseerPhysics.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="FairyGUI.DesktopGL">
+      <HintPath>E:\Editor\FairyGUI.DesktopGL.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Net">
+      <HintPath>C:\Program Files (x86)\MonoGame\v3.0\Assemblies\DesktopGL\MonoGame.Framework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game1.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Scenes\MainScene.cs" />
+    <Compile Include="Utils\CharaterManager.cs" />
+    <Compile Include="Utils\MonsterIdle.cs" />
+    <Compile Include="Utils\PlayerIdle.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+</Project>

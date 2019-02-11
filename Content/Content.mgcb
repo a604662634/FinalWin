@@ -1,0 +1,58 @@
+
+#----------------------------- Global Properties ----------------------------#
+
+/outputDir:..\bin\Debug\Content
+/intermediateDir:obj/$(Platform)
+/platform:DesktopGL
+/config:
+/profile:Reach
+/compress:False
+
+#-------------------------------- References --------------------------------#
+
+/reference:E:\Editor\CLEngine.PipelineImporter.dll
+
+#---------------------------------- Content ---------------------------------#
+
+#begin FairyGUI.fx
+/importer:EffectImporter
+/processor:EffectProcessor
+/processorParam:DebugMode=Auto
+/build:FairyGUI.fx
+
+#begin mainMonster/main_ymr.json
+/importer:TexturePackerJsonImporter
+/processor:TexturePackerProcessor
+/processorParam:parseAnimations=False
+/build:mainMonster/main_ymr.json
+
+#begin mainMonster/main_ymr_png.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:mainMonster/main_ymr_png.png
+
+#begin mainRole/main_gjs.json
+/importer:TexturePackerJsonImporter
+/processor:TexturePackerProcessor
+/processorParam:parseAnimations=False
+/build:mainRole/main_gjs.json
+
+#begin mainRole/main_gjs_png.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:mainRole/main_gjs_png.png
+

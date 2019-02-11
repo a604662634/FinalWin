@@ -1,0 +1,75 @@
+{"frames": [
+
+{
+	"filename": "IDLE_000.png",
+	"frame": {"x":0,"y":0,"w":1368,"h":1150},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1368,"h":1150},
+	"sourceSize": {"w":1368,"h":1150},
+	"pivot": {"x":0.498538,"y":0.954783}
+},
+{
+	"filename": "IDLE_001.png",
+	"frame": {"x":1368,"y":0,"w":1416,"h":1153},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1416,"h":1153},
+	"sourceSize": {"w":1416,"h":1153},
+	"pivot": {"x":0.498538,"y":0.954783}
+},
+{
+	"filename": "IDLE_002.png",
+	"frame": {"x":2784,"y":0,"w":1458,"h":1155},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1458,"h":1155},
+	"sourceSize": {"w":1458,"h":1155},
+	"pivot": {"x":0.498538,"y":0.954783}
+},
+{
+	"filename": "IDLE_003.png",
+	"frame": {"x":0,"y":1155,"w":1499,"h":1156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1499,"h":1156},
+	"sourceSize": {"w":1499,"h":1156},
+	"pivot": {"x":0.498538,"y":0.954783}
+},
+{
+	"filename": "IDLE_004.png",
+	"frame": {"x":1499,"y":1155,"w":1501,"h":1156},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1501,"h":1156},
+	"sourceSize": {"w":1501,"h":1156},
+	"pivot": {"x":0.498538,"y":0.954783}
+},
+{
+	"filename": "IDLE_005.png",
+	"frame": {"x":0,"y":2311,"w":1459,"h":1155},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1459,"h":1155},
+	"sourceSize": {"w":1459,"h":1155},
+	"pivot": {"x":0.498538,"y":0.954783}
+},
+{
+	"filename": "IDLE_006.png",
+	"frame": {"x":1459,"y":2311,"w":1418,"h":1153},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1418,"h":1153},
+	"sourceSize": {"w":1418,"h":1153},
+	"pivot": {"x":0.498538,"y":0.954783}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "main_ymr_png.png",
+	"format": "RGBA8888",
+	"size": {"w":4242,"h":4242},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:13fe85d035d0debc219fcada0cbff49b:ddb85af82421898bb57c6e391ea72c11:9b0ea337896b1a60fadf539fdf5105f7$"
+}
+}
